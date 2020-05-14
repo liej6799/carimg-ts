@@ -1,0 +1,18 @@
+<form autocomplete="off" #createCarBrandForm="ngForm" (ngSubmit)="save()">
+    <h1 mat-dialog-title>Create New Car Brand</h1>
+    <mat-dialog-content style="width:600px;height:300px;">
+        <br />
+        <div class="row-fluid">
+            <div class="col-md-12">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" [placeholder]="'Name'" [(ngModel)]="carbrand.name"
+                        required minlength="2" maxlength="32">
+                </div>
+
+            </div>
+        </div>
+
+    </mat-dialog-content>
+</form>

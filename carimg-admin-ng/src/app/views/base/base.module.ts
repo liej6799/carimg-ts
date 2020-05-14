@@ -33,6 +33,10 @@ import { NavbarsComponent } from './navbars/navbars.component';
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog'
+import { MatFormFieldModule } from '@angular/material/form-field'
+
+import { CreateCarBrandComponent } from './carbrand/create/create-carbrand.component'
 
 
 @NgModule({
@@ -46,11 +50,17 @@ import { MatTableModule } from '@angular/material/table';
     PopoverModule.forRoot(),
     ProgressbarModule.forRoot(),
     TooltipModule.forRoot(),
-    MatTableModule
+    MatTableModule,
+    MatDialogModule,
+    MatFormFieldModule
   ],
   declarations: [
     NavbarsComponent,
-    CarBrandComponent
+    CarBrandComponent,
+    CreateCarBrandComponent,
+  ],
+  entryComponents: [
+    CreateCarBrandComponent
   ]
 })
 export class BaseModule { }

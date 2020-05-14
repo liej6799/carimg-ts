@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
 import { NavbarsComponent } from './navbars/navbars.component';
 import { CarBrandComponent } from './carbrand/carbrand.component';
 

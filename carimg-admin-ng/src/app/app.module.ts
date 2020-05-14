@@ -40,6 +40,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { environment } from '../environments/environment';
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -61,7 +62,8 @@ import { environment } from '../environments/environment';
     AppComponent,
     ...APP_CONTAINERS,
     P404Component,
-    P500Component
+    P500Component,
+
   ],
   providers: [{
     provide: [LocationStrategy,
