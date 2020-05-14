@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { CardsComponent } from './cards.component';
-
+import { CarBrandComponent } from './carbrand/carbrand.component';
 // Forms Component
 import { FormsComponent } from './forms.component';
 
@@ -47,6 +47,8 @@ import { NavbarsComponent } from './navbars/navbars.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { MatTableModule } from '@angular/material/table';
+
 
 @NgModule({
   imports: [
@@ -60,7 +62,8 @@ import { BaseRoutingModule } from './base-routing.module';
     PaginationModule.forRoot(),
     PopoverModule.forRoot(),
     ProgressbarModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    MatTableModule
   ],
   declarations: [
     CardsComponent,
@@ -74,7 +77,8 @@ import { BaseRoutingModule } from './base-routing.module';
     PopoversComponent,
     ProgressComponent,
     TooltipsComponent,
-    NavbarsComponent
+    NavbarsComponent,
+    CarBrandComponent
   ]
 })
 export class BaseModule { }

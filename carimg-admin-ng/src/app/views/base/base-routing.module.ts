@@ -13,6 +13,7 @@ import { PopoversComponent } from './popovers.component';
 import { ProgressComponent } from './progress.component';
 import { TooltipsComponent } from './tooltips.component';
 import { NavbarsComponent } from './navbars/navbars.component';
+import { CarBrandComponent } from './carbrand/carbrand.component';
 
 const routes: Routes = [
   {
@@ -108,6 +109,13 @@ const routes: Routes = [
         data: {
           title: 'Navbars'
         }
+      },
+      {
+        path: 'carbrand',
+        component: CarBrandComponent,
+        data: {
+          title: 'Car Brand'
+        }
       }
     ]
   }
@@ -117,4 +125,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class BaseRoutingModule {}
+export class BaseRoutingModule { }
